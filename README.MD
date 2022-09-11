@@ -6,3 +6,8 @@
 - Banco de dados SQLITE
 
 - Imsomnia para melhor performance na face de desenvolvimento usando o nodeJS
+
+- para gerar a tabela no banco de dados através do knex devemos
+usar ( npx migrate:latest)
+- para gerar a migration devemos usar 
+npx knex migrate:make nomedoarquivo
