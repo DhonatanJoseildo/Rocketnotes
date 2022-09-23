@@ -13,3 +13,4 @@
 usar ( npx migrate:latest)
 - para gerar a migration devemos usar 
 npx knex migrate:make nomedoarquivo
+- usamos middleware de tratamento de exceções
