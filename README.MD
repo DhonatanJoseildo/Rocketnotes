@@ -4,6 +4,8 @@
 
 - Javascript - nodeJS - express
 - Banco de dados SQLITE
+- knex
+- bcrypt
 
 - Imsomnia para melhor performance na face de desenvolvimento usando o nodeJS
 
