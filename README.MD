@@ -15,7 +15,7 @@ usar ( npx migrate:latest)
 npx knex migrate:make nomedoarquivo
 - usamos middleware de tratamento de exceções
 
-## Dependencias
+## Dependências
 
 - npm install bcryptjs --save
 - npm install nodemon --save-dev
