@@ -63,8 +63,7 @@ class UsersController {
     name = ?,
     email = ?,
     password = ?,
-    updated_at = ?
-    WHERE id = ?`,
+    updated_at = ? WHERE id = ?`,
     [user.name, user.email, user.password, new Date(), id]
     );
 
