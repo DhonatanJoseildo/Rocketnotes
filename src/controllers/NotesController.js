@@ -2,7 +2,7 @@ const knex = require("../database/knex");
 
 class NotesController {
   async create(req, res){
-    const { title, description, tags, links } = req.body;
+    const { title, description, links, tags } = req.body;
     const user_id = req.user.id;
 
     const note_id = await knex("notes").insert({
@@ -75,6 +75,7 @@ class NotesController {
         .whereLike("notes.title", `%${title}%`)
         .whereIn("name", filterTags)
         .innerJoin("notes", "notes.id", "tags.note_id")
+        .groupBy("notes.id")
         .orderBy("notes.title");
       
     }else{
